@@ -11,11 +11,11 @@
     <!-- header or nav bar -->
     <header>
         <nav class="nav-bar">
-            <div class="logo">🧠 QuizMaster Pro</div>
+            <div class="logo" title="QuizMaster Pro">🧠 QuizMaster Pro</div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="quiz.html">Quiz</a>
-                <a href="">About</a>
+                <a href="index.html" title="Home">Home</a>
+                <a href="quiz.html" title="Quiz">Quiz</a>
+                <a href="#" title="About">About</a>
             </div>
         </nav>
     </header>
@@ -33,7 +33,7 @@
 
         <!-- Progress Section -->
         <div class="progress-container">
-            <div class="progress-bar">
+            <div class="progress-bar" title="progress-bar">
                 <div id="progress"></div>
             </div>
 
@@ -42,15 +42,15 @@
 
         <!-- Quiz Content -->
         <div id="quiz-box">
-            <div id="question">Question 1,2,3</div>
+            <div id="question"  title="Question">Question 1,2,3</div>
             
             <div class="options-container">
-                <button class="option" onclick="selectAnswer(0)">Option A</button>
-                <button class="option" onclick="selectAnswer(1)">Option B</button>
-                <button class="option" onclick="selectAnswer(2)">Option C</button>
+                <button class="option" title="Option" onclick="selectAnswer(0)">Option A</button>
+                <button class="option" title="Option" onclick="selectAnswer(1)">Option B</button>
+                <button class="option" title="Option" onclick="selectAnswer(2)">Option C</button>
             </div>
 
-            <div id="score-display">Score: 0</div>
+            <div id="score-display" title="Score">Score: 0</div>
         </div>
 
         <!-- result contaner -->

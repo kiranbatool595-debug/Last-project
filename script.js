@@ -75,7 +75,10 @@
             if(selectedIndex === correctIndex){
                 // then add score.
                 score++;
+            } else{
+                alert("wrong answer");
             } 
+
             // move to the next question.
             currentQuestion++;
             // if we have more question then move on if not then show the result.
@@ -102,7 +105,7 @@
             } 
             // 2-3 correct
             else if (score >= 2){ 
-                message.textContent = "👍 Good job, You know your stuff.";
+                message.textContent = "👍 Good job, Keep it up.";
                 message.style.color = "orange";
             }
             // 0-1 correct
