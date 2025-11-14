@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster Pro</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-image: url(background\ img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(51, 51, 51);
+        }
+        header{
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.329);
+            width: 100%;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 70px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(102, 126, 234);
+            cursor: pointer;
+        }
+        .nav-links{
+            display: flex;
+            gap: 25px;
+            padding-top: 8px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(102, 102, 102);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: rgb(102, 126, 234);
+            text-shadow: 5px 0px 40px rgb(102, 126, 234), -5px 0px 40px rgb(102, 126, 234);
+        }
+
+        /* marquee */
+        .marquee-container {
+            background: rgba(255, 255, 255, 0.226);
+            color: white;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* main body first container */
+        .main-container{
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        .main-container h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .main-container p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin: 2% auto;
+            line-height: 1.6;
+        }
+
+        /* button for quiz */
+        .btn {
+            text-decoration: none;
+            padding: 12px 35px;
+            border-radius: 25px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: white;
+            color: rgb(102, 126, 234);
+            transform: translateY(-2px);
+        }
+
+        /* card section */
+        .details{
+            background-color: white;
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 50px;
+            color: rgb(51, 51, 51);
+        }
+        .card-container{
+            display: flex;
+            gap: 5%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card{
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(224, 225, 226, 0.836);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        .card-icon {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: rgb(51, 51, 51);
+        }
+        .card p {
+            color: rgb(102, 102, 102);
+            line-height: 1.5;
+        }
+
+        /* last container */
+        .last-container{
+            background: rgb(102, 126, 234);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .last-container h2{
+            font-size: 40px;
+            margin-bottom: 2%;
+        }
+        .last-container p{
+            font-size: 20px;
+        }
+
+        /* footer */
+        footer{
+            text-align: center;
+            padding: 40px 0;
+            background: rgb(45, 55, 72);
+            color: white;
+        }
+        .footer-links a{
+            color: white;
+            text-decoration: none;
+            margin-left: 2.5% ;
+        }
+        .footer-links a:hover{
+            color:rgb(203, 213, 224);;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            color: rgb(160, 174, 192);
+            font-size: 14px;
+        }
+        @media (max-width: 768px){
+            .nav-bar{
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .main-container h1{
+                font-size: 35px;
+            }
+            .main-container p{
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+            .card-container{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header or nav bar -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">🧠 QuizMaster Pro</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Marquee Tag -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="9">
+            🎯 Test your knowledge with our interactive quiz • 🏆 Compete with friends • 📚 Learn while having fun • 🔄 New questions added regularly
+        </marquee>
+    </div>
+
+    <!-- main body -->
+    <div class="main-container">
+        <h1>Test Your Programming Knowledge</h1>
+        <p>Challenge yourself with interactive quizzes on HTML, CSS, JavaScript and more. Learn while having fun!</p>
+        
+        <!-- button for quiz -->
+        <div>
+           <a href="quiz.html" class="btn">Start Quiz Now</a>
+        </div>
+    </div>
+
+    <!-- about this web site -->
+    <div class="details">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="card-container">
+
+            <div class="card">
+                <span class="card-icon">🎯</span>
+                <h3>Interactive Quizzes</h3>
+                <p>Engaging questions that test your real programming skills and knowledge.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">⚡</span>
+                <h3>Instant Results</h3>
+                <p>Get immediate feedback on your answers with detailed explanations.</p>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">📈</span>
+                <h3>Track Progress</h3>
+                <p>Monitor your improvement and see how you compare with others.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- last 2 line for home page -->
+    <div class="last-container">
+        <h2>Ready to Begin?</h2>
+        <p>Join our community of learners and test your programming knowledge today.</p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quizzes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+            <div class="copyright">
+                &copy; 2025 QuizMaster. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

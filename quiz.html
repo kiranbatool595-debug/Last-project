@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster Pro</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- header or nav bar -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">🧠 QuizMaster Pro</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Marquee Tag -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="9">
+            🎯 Test your knowledge with our interactive quiz • 🏆 Compete with friends • 📚 Learn while having fun • 🔄 New questions added regularly
+        </marquee>
+    </div>
+
+    <div class="container">
+        <h1>🧠 Quiz Master Pro</h1>
+        <div class="paragraph">Challenge yourself with our programming quiz</div>
+
+        <!-- Progress Section -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <div id="question-counter">Question 1 of 5</div>
+        </div>
+
+        <!-- Quiz Content -->
+        <div id="quiz-box">
+            <div id="question">Question 1,2,3</div>
+            
+            <div class="options-container">
+                <button class="option" onclick="selectAnswer(0)">Option A</button>
+                <button class="option" onclick="selectAnswer(1)">Option B</button>
+                <button class="option" onclick="selectAnswer(2)">Option C</button>
+            </div>
+
+            <div id="score-display">Score: 0</div>
+        </div>
+
+        <!-- result contaner -->
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quizzes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+            <div class="copyright">
+                &copy; 2025 QuizMaster. All rights reserved.
+            </div>
+        </div>
+    </footer>
+        
+    <script src="script.js"></script>
+</body>
+</html>
