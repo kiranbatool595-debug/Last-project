@@ -98,17 +98,17 @@
             resultDiv.innerHTML = "";
 
             let message = document.createElement("p");
-            // 4-5 correct
+            // if 4-5 Q correct
             if(score >= 4){ 
                 message.textContent = "🎉 Excellent, You're a quiz master.";
                 message.style.color = "green";
             } 
-            // 2-3 correct
+            // if 2-3 Q correct
             else if (score >= 2){ 
                 message.textContent = "👍 Good job, Keep it up.";
                 message.style.color = "orange";
             }
-            // 0-1 correct
+            // if 0-1 Q correct
              else { 
                 message.textContent = "💪 Keep learning, You'll get better.";
                 message.style.color = "red";
